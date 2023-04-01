@@ -146,7 +146,7 @@ const gameState = {
     this.determineFoxState();
   },
   cleanUpPoop() {
-    if (!this.current === "POOPING") {
+    if (this.current !== "POOPING") {
       return;
     }
 
